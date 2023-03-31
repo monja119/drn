@@ -1,0 +1,172 @@
+body{
+    overflow-x: hidden;
+}
+.w-5{
+    width: 5%;
+}
+.h-5{
+    height: 5%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.outline-none{
+    outline: none;
+}
+.outline-none:focus{
+    outline: none;
+}
+
+
+/* first view */
+.dropdown{
+    display: none;
+}
+.dropdown-item{
+    display: none;
+    color: white;
+}
+.dropdown-item:hover{
+    color: black;
+}
+
+.home-view{
+    background-image: url("../static/images/home/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.home-view .section-nav-bar{
+    padding: 0;
+}
+
+.home-view .section-nav-bar > div{
+    font-size: 13px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.home-view  .section-nav-bar  .nav-item:hover{
+    background-color:  rgba(0, 0, 200, 0.4);
+}
+
+.home-view .section-footer{
+    height: 70%;
+}
+
+
+/* info carousel */
+.carousel-info-content{
+    margin-top: -5%;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+.gallery-content{
+    width: 100%;
+}
+.gallery{
+    margin-top: 1%;
+    width: 19.8%;
+    margin-left: 0.1%;
+}
+.gallery > img{
+    height: 70vh;
+}
+.gallery > span{
+    height: 10%;
+    width: 20rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 2%;
+}
+
+.gallery-foot {
+    font-size: 15px;
+}
+
+.gallery-foot > div:hover{
+    background-color:  rgba(0, 0, 200, 0.4);
+    cursor: pointer;
+}
+
+
+/* propriety */
+.propriety > div .card{
+    color: white;
+    border-radius: 0;
+    height: 30em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.propriety > div .card .card-body{
+    padding: 0;
+    overflow: hidden;
+}
+.propriety > div .card .card-body .card-info-scroll{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: content-box;
+    margin-top: 110%;
+    height: 112%;
+    transition-property: margin-top;
+    transition-duration: 1s;
+}
+.propriety > div .card .card-body:hover .card-info-scroll{
+    margin-top: -14%;
+}
+
+
+/* responsive */
+
+/* extra large */
+@media (max-width : 1400px){
+    .gallery > span{
+        height: 10%;
+        width: 16rem;
+    }
+}
+@media (max-width : 1200px){
+    .propriety > div .card .card-body .card-info-scroll{
+        margin-top: 70%;
+        height: 120%;
+    }
+    .gallery > span{
+        height: 10%;
+        width: 14rem;
+    }
+}
+
+/* large */
+@media (max-width : 992px){
+    .propriety > div .card .card-body .card-info-scroll{
+        margin-top: 90%;
+        height: 120%;
+    }
+}
+
+/* medium */
+@media (max-width : 768px){
+    .nav-item{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .propriety > div .card .card-body .card-info-scroll{
+        margin-top: 60%;
+        height: 120%;
+    }
+}
+
+/* small */
+@media (max-width : 576px){
+    .propriety > div .card .card-body .card-info-scroll{
+        margin-top: 80%;
+        height: 120%;
+    }
+}
