@@ -33,15 +33,19 @@ body{
 }
 
 .home-view{
-    background-image: url("../static/images/home/bg4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    z-index: -1;
 }
 
-.home-view .section-nav-bar{
-    padding: 0;
+.home-view > div > img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
 }
+
 
 .home-view .section-nav-bar > div{
     font-size: 13px;
