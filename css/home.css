@@ -39,14 +39,6 @@ body{
     z-index: -1;
 }
 
-.home-view > div > img{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-}
-
-
 .home-view .section-nav-bar > div{
     font-size: 13px;
     height: 38px;
@@ -61,8 +53,28 @@ body{
     height: 70%;
 }
 
+/* carousel */
 
-/* info carousel */
+#carousel{
+    top: -17%;
+    z-index: -1;
+}
+.carousel-inner{
+}
+.carousel-indicators {
+    margin-bottom: 6%;
+}
+
+.carousel-img{
+    height: 100vh;
+}
+.carousel-content{
+    z-index: 999;
+    margin-top: 30%;
+    position: absolute;
+    color: white;
+}
+
 .carousel-info-content{
     margin-top: -5%;
     width: 100%;
